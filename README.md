@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![Nishan-Vivek](https://circleci.com/gh/Nishan-Vivek/Operationalize-ML-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/Nishan-Vivek/Operationalize-ML-Microservice-API)
 
 ## Project Overview
 
