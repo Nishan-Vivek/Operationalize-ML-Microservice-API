@@ -1,5 +1,22 @@
 [![Nishan-Vivek](https://circleci.com/gh/Nishan-Vivek/Operationalize-ML-Microservice-API.svg?style=svg)](https://app.circleci.com/pipelines/github/Nishan-Vivek/Operationalize-ML-Microservice-API)
 
+# Requirements
+Task 9: README.md
+A complete README file should include:
+
+A summary of the project
+Instructions on how to run the Python scripts and web app (simply listing command line calls will suffice), and
+A short explanation of the files in the repository.
+The README should also include the "passed" status badge (shown above) at the top of the README.
+
+# Operationalize a Machine Learning Microservice API Project
+
+A series of scripts and instructions that deploys a bundled Machine Learning API flask application into a local Kubernetes cluster. 
+
+## Specifications
+
+Specifications as per Udacity course requirements can be found [here](./documentation/project_specifications.md).
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
