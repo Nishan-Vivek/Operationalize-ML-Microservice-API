@@ -1,5 +1,27 @@
+(venv) roachx@RoachEyesL:~/udacity/Operationalize-ML-Microservice-API$ ./run_kubernetes.sh 
+error: failed to create deployment: deployments.apps "udacity" already exists
 NAME                       READY   STATUS    RESTARTS   AGE
-udacity-8588b94dbd-zn2rv   1/1     Running   0          92s
+udacity-8588b94dbd-kp7rc   1/1     Running   0          14s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+^C(venv) roachx@RoachEyesL:~/udacity/Operationalize-ML-Microservice-API$ kubectl logs udacity-8588b94dbd-kp7rc
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 215-731-435
+[2020-09-30 20:46:19,307] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-09-30 20:46:19,323] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-09-30 20:46:19,333] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-09-30 20:46:19,336] INFO in app: Output Prediction: [20.35373177134412]
+127.0.0.1 - - [30/Sep/2020 20:46:19] "POST /predict HTTP/1.1" 200 -
